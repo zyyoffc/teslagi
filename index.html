@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Produk Game & Akun</title>
+    <title>Petualangan Impian</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('URL_GAMBAR_ANIME_FANTASI') no-repeat center center fixed;
+            background: url('https://images.unsplash.com/photo-1616588589676-623b17472c2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWUlMjBmYW50YXN5fGVufDB8fDB8fA%3D%3D&w=1000&q=80') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
             line-height: 1.6;
@@ -60,6 +60,89 @@
         }
         .product-card:hover {
             transform: translateY(-5px);
+        }
+        .product-card a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .product-card a i {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #007bff;
+        }
+        .product-card a:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Gerbang Impian!</h1>
+        <p>Temukan dunia baru yang penuh keajaiban dan petualangan.</p>
+    </header>
+
+    <main>
+        <h2>Pilih Jalanmu:</h2>
+        <ul class="product-list">
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20layanan%20yang%20Anda%20tawarkan">
+                        <i class="fas fa-magic"></i>
+                        Temukan Kekuatan Tersembunyi
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20layanan%20yang%20Anda%20tawarkan">
+                        <i class="fas fa-gem"></i>
+                        Kumpulkan Harta Karun Legendaris
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20layanan%20yang%20Anda%20tawarkan">
+                        <i class="fas fa-scroll"></i>
+                        Ukir Kisah Abadi
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20layanan%20yang%20Anda%20tawarkan">
+                        <i class="fas fa-flask"></i>
+                        Raih Ilmu Pengetahuan Tertinggi
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <p>Klik salah satu jalan untuk memulai petualanganmu melalui WhatsApp.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gerbang Impian</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
         }
         .product-card a {
             display: block;
