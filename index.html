@@ -1,65 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ZYY Official — Top Up Store</title>
-<style>
-:root{--bg:#071129;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;color:#e6eef6;font-family:Inter,system-ui,Arial}
-body{margin:0;background:linear-gradient(180deg,#071129 0%, #081026 70%);padding:18px}
-.panel{background:var(--card);padding:14px;border-radius:10px;color:var(--muted)}
-.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-button{padding:8px 10px;border-radius:8px;border:0;background:var(--accent);color:#021;cursor:pointer}
-input,select,textarea{padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;width:100%}
-.small{font-size:13px;color:var(--muted)}
-.card{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;margin-bottom:10px}
-.btn-plain{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:6px;border-radius:6px;cursor:pointer}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Produk Game & Akun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <div>
-      <h2 style="margin:0;color:#e6eef6">ZYY Official — Top Up Store</h2>
-      <div class="small">Auto-confirm active · DANA: <b>083834256959</b></div>
-    </div>
-    <div style="display:flex;gap:8px">
-      <button id="openAdmin">Admin</button>
-      <button id="exportOrders">Export CSV</button>
-    </div>
-  </div>
 
-  <div style="display:grid;grid-template-columns:1fr 360px;gap:16px">
-    <!-- LEFT: Katalog -->
-    <section class="panel">
-      <div style="display:flex;gap:8px;margin-bottom:12px">
-        <input id="q" placeholder="Cari produk...">
-        <select id="cat"><option value="all">Semua</option></select>
-      </div>
+    <header>
+        <h1>Selamat Datang di Toko Kami!</h1>
+        <p>Temukan berbagai produk game dan akun yang Anda butuhkan.</p>
+    </header>
 
-      <div id="grid"></div>
+    <main>
+        <h2>Pilih Produk yang Anda Inginkan</h2>
+        <ul>
+            <li>
+                <a href="https://wa.me/6283834256959?text=Saya%20tertarik%20dengan%20Top-up%20Game">Top-up Game</a>
+            </li>
+            <li>
+                <a href="https://wa.me/6283834256959?text=Saya%20tertarik%20dengan%20Beli%20Akun">Beli Akun</a>
+            </li>
+            <li>
+                <a href="https://wa.me/6283834256959?text=Saya%20tertarik%20dengan%20Jual%20Akun">Jual Akun</a>
+            </li>
+        </ul>
+        <p>Silakan klik pada salah satu produk di atas untuk menghubungi kami melalui WhatsApp.</p>
+    </main>
 
-      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+    <footer>
+        <p>&copy; 2024 Toko Produk Game & Akun</p>
+    </footer>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div><label class="small">UID</label><input id="uid" placeholder="Contoh: 123456789"></div>
-        <div><label class="small">Server (opsional)</label><input id="server" placeholder="Contoh: 1 / ID"></div>
-      </div>
-
-      <div style="display:flex;gap:8px;margin-top:10px">
-        <button id="addCart">Tambah ke Keranjang</button>
-        <button id="buyNow">Beli Sekarang (Auto)</button>
-      </div>
-
-      <div style="margin-top:14px">
-        <div class="small">Pembayaran via gateway (butuh backend):</div>
-        <div style="display:flex;gap:8px;margin-top:6px">
-          <button id="payMidtrans">Midtrans Snap</button>
-          <button id="payTripay">Tripay / Duitku</button>
-        </div>
-        <div class="small" style="margin-top:6px">Catatan: server-side diperlukan; contoh backend disertakan.</div>
-      </div>
-    </section>
-
-    <!-- RIGHT: Keranjang & Orders -->
+</body>
+</html>
     <aside class="panel">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
         <div class="small">Keranjang</div>
