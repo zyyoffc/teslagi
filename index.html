@@ -4,62 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zyy Official Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1616588589676-623b17472c2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWUlMjBmYW50YXN5fGVufDB8fDB8fA%3D%3D&w=1000&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            line-height: 1.6;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #f0f0f0;
         }
         header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2em 0;
+            background-color: #ddd;
+            color: #333;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        header h1 {
-            margin-bottom: 0.5em;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        main {
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 1;
+            margin-bottom: 20px;
         }
-        .product-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .product-button {
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
         }
-        .product-list li {
-            margin: 10px;
-            width: 300px;
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ddd;
+            width: 100%;
         }
-        .product-card {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        .product-card a {
-            display: block;
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Zyy Official Store</h1>
+        <p>beli disini dijamin ketagihan boskuu 👑</p>
+    </header>
+
+    <button class="product-button">💎 Top-up Game</button>
+    <button class="product-button">💸 Jual Akun</button>
+    <button class="product-button">😊 Beli Akun</button>
+
+    <footer>
+        <p>© 2024 Zyy Official Store</p>
+    </footer>
+</body>
+</html>
             padding: 20px;
             text-decoration: none;
             color: #333;
