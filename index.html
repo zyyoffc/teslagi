@@ -4,62 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Produk Game & Akun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(to bottom, #6a82fb, #fc5c7d); /* Gradien anime fantasi */
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 1em 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2em 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin-bottom: 0.5em;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         main {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
         }
-        ul {
+        .product-list {
             list-style: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        li {
-            margin-bottom: 10px;
+        .product-list li {
+            margin: 10px;
+            width: 300px;
         }
-        a {
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card a {
             display: block;
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
+            padding: 20px;
             text-decoration: none;
-            border-radius: 5px;
+            color: #333;
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
-        a:hover {
-            background-color: #0056b3;
+        .product-card a i {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #007bff;
+        }
+        .product-card a:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         footer {
             text-align: center;
             padding: 1em 0;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Selamat Datang di Toko Kami!</h1>
-        <p>Temukan berbagai produk game dan akun yang Anda butuhkan.</p>
+        <h1>Selamat Datang, Para Petualang!</h1>
+        <p>Dapatkan kekuatan tak terbatas dengan produk game & akun terbaik kami!</p>
     </header>
 
     <main>
-        <h2>Pilih Produk yang Anda Inginkan</h2>
+        <h2>Pilih Petualanganmu:</h2>
+        <ul class="product-list">
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20Top-up%20Game">
+                        <i class="fas fa-gamepad"></i>
+                        Top-up Game: Raih Kekuatan Penuh!
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20Beli%20Akun">
+                        <i class="fas fa-shopping-cart"></i>
+                        Beli Akun: Mulai Petualangan Baru!
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <a href="https://wa.me/62881036764627?text=Saya%20tertarik%20dengan%20Jual%20Akun">
+                        <i class="fas fa-coins"></i>
+                        Jual Akun: Tukarkan Kejayaanmu!
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <p>Klik salah satu petualangan di atas untuk memulai perjalananmu melalui WhatsApp.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Produk Game & Akun</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
         <ul>
             <li>
                 <a href="https://wa.me/6283834256959?text=Saya%20tertarik%20dengan%20Top-up%20Game">Top-up Game</a>
